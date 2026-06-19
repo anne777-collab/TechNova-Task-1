@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">Hero placeholder</title>
+  <desc id="desc">A premium abstract composition used as a hero image placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="55%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff1e8"/>
+    </linearGradient>
+    <linearGradient id="device" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="760" rx="42" fill="url(#bg)"/>
+  <circle cx="150" cy="140" r="70" fill="#2563eb" opacity=".09"/>
+  <circle cx="760" cy="120" r="80" fill="#f97316" opacity=".09"/>
+  <rect x="210" y="124" width="480" height="460" rx="38" fill="#111827" opacity=".06"/>
+  <rect x="190" y="104" width="480" height="460" rx="38" fill="#fff" opacity=".8" stroke="#dbe5f1"/>
+  <rect x="262" y="162" width="336" height="344" rx="28" fill="url(#device)"/>
+  <rect x="300" y="198" width="260" height="36" rx="18" fill="#fff" opacity=".25"/>
+  <rect x="300" y="256" width="170" height="18" rx="9" fill="#fff" opacity=".28"/>
+  <rect x="300" y="292" width="220" height="18" rx="9" fill="#fff" opacity=".22"/>
+  <rect x="300" y="328" width="130" height="18" rx="9" fill="#fff" opacity=".22"/>
+  <rect x="300" y="390" width="230" height="64" rx="18" fill="#fff" opacity=".18"/>
+  <circle cx="694" cy="270" r="70" fill="#f97316" opacity=".18"/>
+  <circle cx="678" cy="270" r="38" fill="#fff" opacity=".45"/>
+  <text x="62" y="650" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">TechNova</text>
+  <text x="62" y="690" fill="#5b6475" font-family="Segoe UI, Arial, sans-serif" font-size="22">Premium technology, clean presentation.</text>
+</svg>

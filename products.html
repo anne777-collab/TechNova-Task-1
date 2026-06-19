@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | TechNova</title>
+  <meta name="description" content="Browse TechNova's premium product catalog with static search, filter, and sorting UI.">
+  <meta name="keywords" content="TechNova products, electronics catalog, smartphones, laptops, gaming, accessories">
+  <meta name="author" content="TechNova">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header" data-component="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="TechNova home">
+        <span class="brand__mark" aria-hidden="true">T</span>
+        <span class="brand__text">TechNova</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-component="primary-nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link is-active" href="products.html" aria-current="page">Products</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="icon-button" href="#" aria-label="Cart placeholder" data-action="open-cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6h15l-1.5 8.5a2 2 0 0 1-2 1.5H8.4a2 2 0 0 1-2-1.6L4.5 3.5H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="20" r="1.4" fill="currentColor"/>
+            <circle cx="17" cy="20" r="1.4" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="btn btn--ghost" href="#" data-action="login">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero section section--tinted" data-section="products-hero">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="eyebrow">Product catalog</span>
+          <h1>Explore our curated electronics lineup</h1>
+          <p>Search, filter, and sorting controls are present as static UI now, with clean hooks for later JavaScript integration.</p>
+        </div>
+
+        <form class="catalog-tools glass-card" data-form="catalog-tools" aria-label="Product catalog controls">
+          <div class="field">
+            <label for="catalog-search">Search products</label>
+            <input id="catalog-search" name="search" type="search" placeholder="Search by product name or category">
+          </div>
+          <div class="field">
+            <label for="catalog-category">Category filter</label>
+            <select id="catalog-category" name="category">
+              <option>All Categories</option>
+              <option>Smartphones</option>
+              <option>Laptops</option>
+              <option>Gaming</option>
+              <option>Accessories</option>
+              <option>Smart Watches</option>
+              <option>Audio Devices</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="catalog-sort">Sort by</label>
+            <select id="catalog-sort" name="sort">
+              <option>Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Top Rated</option>
+              <option>Newest</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" data-section="catalog-grid">
+      <div class="container">
+        <div class="card-grid card-grid--products card-grid--catalog">
+          <article class="product-card" data-product-card data-product-id="nova-air-12" data-product-category="smartphones">
+            <img src="images/product-placeholder.svg" alt="Compact smartphone product display with a glossy edge-to-edge screen">
+            <div class="product-card__body">
+              <span class="chip">Smartphones</span>
+              <h2 class="product-card__title">Nova Air 12</h2>
+              <p>Lightweight body, bright display, and all-day battery support for daily tasks.</p>
+              <div class="product-card__meta">
+                <span class="price">$699</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="nova-max-ultra" data-product-category="smartphones">
+            <img src="images/product-placeholder.svg" alt="Flagship smartphone product display with premium metallic styling">
+            <div class="product-card__body">
+              <span class="chip">Smartphones</span>
+              <h2 class="product-card__title">Nova Max Ultra</h2>
+              <p>Premium imaging, strong performance, and a camera-first experience.</p>
+              <div class="product-card__meta">
+                <span class="price">$1,099</span>
+                <span class="rating">4.9 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="aero-slate-13" data-product-category="laptops">
+            <img src="images/product-placeholder.svg" alt="Portable laptop product display shown as a slim workstation device">
+            <div class="product-card__body">
+              <span class="chip">Laptops</span>
+              <h2 class="product-card__title">Aero Slate 13</h2>
+              <p>Compact productivity laptop with a refined keyboard and fast everyday workflow.</p>
+              <div class="product-card__meta">
+                <span class="price">$899</span>
+                <span class="rating">4.6 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="aero-book-16" data-product-category="laptops">
+            <img src="images/product-placeholder.svg" alt="Large laptop product display with a professional creative setup">
+            <div class="product-card__body">
+              <span class="chip">Laptops</span>
+              <h2 class="product-card__title">Aero Book 16</h2>
+              <p>Workstation-ready power for content creation, design, and multitasking.</p>
+              <div class="product-card__meta">
+                <span class="price">$1,399</span>
+                <span class="rating">4.8 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="pixel-core-7" data-product-category="gaming">
+            <img src="images/product-placeholder.svg" alt="Gaming console style product display with illuminated accents">
+            <div class="product-card__body">
+              <span class="chip">Gaming</span>
+              <h2 class="product-card__title">Pixel Core 7</h2>
+              <p>Responsive game control with a balanced frame designed for long play sessions.</p>
+              <div class="product-card__meta">
+                <span class="price">$549</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="pixel-arc-headset" data-product-category="gaming">
+            <img src="images/product-placeholder.svg" alt="Gaming headset product display with a premium over-ear profile">
+            <div class="product-card__body">
+              <span class="chip">Gaming</span>
+              <h2 class="product-card__title">Pixel Arc Headset</h2>
+              <p>Comfortable over-ear audio with clear communication for team play and streaming.</p>
+              <div class="product-card__meta">
+                <span class="price">$149</span>
+                <span class="rating">4.8 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="magkit-mini" data-product-category="accessories">
+            <img src="images/product-placeholder.svg" alt="Compact accessory product display with charging and desk organization gear">
+            <div class="product-card__body">
+              <span class="chip">Accessories</span>
+              <h2 class="product-card__title">MagKit Mini</h2>
+              <p>Travel-friendly accessory set with thoughtful everyday utility.</p>
+              <div class="product-card__meta">
+                <span class="price">$79</span>
+                <span class="rating">4.5 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="nova-stand-pro" data-product-category="accessories">
+            <img src="images/product-placeholder.svg" alt="Accessory product display with a premium desk stand and docking setup">
+            <div class="product-card__body">
+              <span class="chip">Accessories</span>
+              <h2 class="product-card__title">Nova Stand Pro</h2>
+              <p>Minimal desk stand for cleaner workspaces and better device viewing angles.</p>
+              <div class="product-card__meta">
+                <span class="price">$59</span>
+                <span class="rating">4.6 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="pulse-band-3" data-product-category="smartwatches">
+            <img src="images/product-placeholder.svg" alt="Smart watch product display with a sporty wearable band design">
+            <div class="product-card__body">
+              <span class="chip">Smart Watches</span>
+              <h2 class="product-card__title">Pulse Band 3</h2>
+              <p>Fitness-first wearable with sleep insights and clean everyday notifications.</p>
+              <div class="product-card__meta">
+                <span class="price">$219</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="pulse-luxe" data-product-category="smartwatches">
+            <img src="images/product-placeholder.svg" alt="Luxury smart watch product display with a polished metal frame">
+            <div class="product-card__body">
+              <span class="chip">Smart Watches</span>
+              <h2 class="product-card__title">Pulse Luxe</h2>
+              <p>Elegant wearable with premium materials and a polished display profile.</p>
+              <div class="product-card__meta">
+                <span class="price">$329</span>
+                <span class="rating">4.8 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="sound-pods-air" data-product-category="audio">
+            <img src="images/product-placeholder.svg" alt="Wireless earbud product display with a compact charging case">
+            <div class="product-card__body">
+              <span class="chip">Audio</span>
+              <h2 class="product-card__title">Sound Pods Air</h2>
+              <p>Everyday earbuds tuned for clarity, call quality, and portable convenience.</p>
+              <div class="product-card__meta">
+                <span class="price">$129</span>
+                <span class="rating">4.6 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="sound-bar-mini" data-product-category="audio">
+            <img src="images/product-placeholder.svg" alt="Audio product display with a compact premium sound bar">
+            <div class="product-card__body">
+              <span class="chip">Audio</span>
+              <h2 class="product-card__title">Sound Bar Mini</h2>
+              <p>Space-saving home audio for sharper dialogue and a richer desk setup.</p>
+              <div class="product-card__meta">
+                <span class="price">$179</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="nova-keyboard" data-product-category="accessories">
+            <img src="images/product-placeholder.svg" alt="Accessory product display with a minimalist mechanical keyboard">
+            <div class="product-card__body">
+              <span class="chip">Accessories</span>
+              <h2 class="product-card__title">Nova Keyboard</h2>
+              <p>Refined typing experience with a design language that suits modern desks.</p>
+              <div class="product-card__meta">
+                <span class="price">$109</span>
+                <span class="rating">4.8 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="nova-mouse-pro" data-product-category="accessories">
+            <img src="images/product-placeholder.svg" alt="Accessory product display with an ergonomic premium mouse">
+            <div class="product-card__body">
+              <span class="chip">Accessories</span>
+              <h2 class="product-card__title">Nova Mouse Pro</h2>
+              <p>Ergonomic precision mouse for productivity and daily editing work.</p>
+              <div class="product-card__meta">
+                <span class="price">$89</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="audio-pod-lite" data-product-category="audio">
+            <img src="images/product-placeholder.svg" alt="Audio product display with lightweight earbuds and a charging dock">
+            <div class="product-card__body">
+              <span class="chip">Audio</span>
+              <h2 class="product-card__title">Audio Pod Lite</h2>
+              <p>Lightweight listening for commuting, office calls, and casual entertainment.</p>
+              <div class="product-card__meta">
+                <span class="price">$99</span>
+                <span class="rating">4.5 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-id="nova-dock-pro" data-product-category="accessories">
+            <img src="images/product-placeholder.svg" alt="Accessory product display with a premium desktop charging dock">
+            <div class="product-card__body">
+              <span class="chip">Accessories</span>
+              <h2 class="product-card__title">Nova Dock Pro</h2>
+              <p>Desktop dock for cleaner charging, cable management, and an organized workspace.</p>
+              <div class="product-card__meta">
+                <span class="price">$119</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="#">View Details</a>
+            </div>
+          </article>
+        </div>
+
+        <nav class="pagination" aria-label="Product pagination">
+          <a class="pagination__link is-active" href="#" aria-current="page">1</a>
+          <a class="pagination__link" href="#">2</a>
+          <a class="pagination__link" href="#">3</a>
+          <span class="pagination__dots" aria-hidden="true">...</span>
+          <a class="pagination__link" href="#">8</a>
+          <a class="pagination__link pagination__link--next" href="#">Next</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-component="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="index.html" aria-label="TechNova home">
+          <span class="brand__mark" aria-hidden="true">T</span>
+          <span class="brand__text">TechNova</span>
+        </a>
+        <p>Premium smart electronics designed with a modern shopping experience in mind.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Support</h3>
+        <ul class="footer__links">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <address>
+          120 Innovation Drive<br>
+          Bengaluru, KA 560001<br>
+          <a href="tel:+911234567890">+91 12345 67890</a><br>
+          <a href="mailto:hello@technova.com">hello@technova.com</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <div class="social-links" aria-label="Social links">
+        <a href="#" aria-label="TechNova on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TechNova on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4.6l4.1 5.7L18.4 4H21l-6.2 8.5L21 20h-4.6l-4.2-5.8L8 20H3.9l6.3-8.6L5 4Z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TechNova on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M11 9l5 3-5 3V9Z" fill="currentColor"/></svg></a>
+      </div>
+      <p>&copy; 2026 TechNova. Built for the internship Task 1 UI foundation.</p>
+    </div>
+  </footer>
+</body>
+</html>

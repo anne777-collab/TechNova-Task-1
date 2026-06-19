@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova | Smart Electronics Store</title>
+  <meta name="description" content="TechNova is a premium smart electronics store showcasing smartphones, laptops, gaming gear, accessories, smart watches, and audio devices.">
+  <meta name="keywords" content="TechNova, electronics store, smartphones, laptops, gaming, accessories, smart watches, audio">
+  <meta name="author" content="TechNova">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header" data-component="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="TechNova home">
+        <span class="brand__mark" aria-hidden="true">T</span>
+        <span class="brand__text">TechNova</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-component="primary-nav">
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav__link" href="products.html">Products</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="icon-button" href="#" aria-label="Cart placeholder" data-action="open-cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6h15l-1.5 8.5a2 2 0 0 1-2 1.5H8.4a2 2 0 0 1-2-1.6L4.5 3.5H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="20" r="1.4" fill="currentColor"/>
+            <circle cx="17" cy="20" r="1.4" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="btn btn--ghost" href="#" data-action="login">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" data-section="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">Smart electronics for modern living</span>
+          <h1>Discover the Future of Technology</h1>
+          <p class="hero__lead">
+            Explore a premium selection of devices designed for speed, clarity, and everyday convenience.
+            TechNova curates standout products for people who want their tech to look as good as it performs.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="products.html">Shop Now</a>
+            <a class="btn btn--secondary" href="products.html">Explore Products</a>
+          </div>
+          <ul class="hero__stats" aria-label="Store highlights">
+            <li>
+              <strong>1K+</strong>
+              <span>Verified products</span>
+            </li>
+            <li>
+              <strong>24/7</strong>
+              <span>Customer support</span>
+            </li>
+            <li>
+              <strong>50+</strong>
+              <span>Leading brands</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <figure class="hero__image-frame">
+            <img src="images/hero-placeholder.svg" alt="Stylish showcase of modern smart electronics on a premium display">
+          </figure>
+          <div class="hero__floating-card glass-card">
+            <span class="mini-label">Featured this week</span>
+            <strong>Nova X1 Pro</strong>
+            <p>Ultra-fast performance, edge-to-edge clarity, and a finish built for modern desks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories" data-section="categories">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Browse by category</span>
+          <h2>Built for every kind of tech lifestyle</h2>
+          <p>From work essentials to entertainment upgrades, each category is designed as a clear entry point for future catalogue expansion.</p>
+        </div>
+
+        <div class="card-grid card-grid--categories">
+          <article class="category-card" data-category="smartphones">
+            <img src="images/category-placeholder.svg" alt="Smartphone category illustration with a sleek device silhouette">
+            <div>
+              <h3>Smartphones</h3>
+              <p>Powerful devices with sharp displays, fast charging, and dependable everyday performance.</p>
+            </div>
+          </article>
+          <article class="category-card" data-category="laptops">
+            <img src="images/category-placeholder.svg" alt="Laptop category illustration with a slim productivity device">
+            <div>
+              <h3>Laptops</h3>
+              <p>Portable machines for creators, professionals, and students who need more from every session.</p>
+            </div>
+          </article>
+          <article class="category-card" data-category="gaming">
+            <img src="images/category-placeholder.svg" alt="Gaming category illustration with a console-inspired display">
+            <div>
+              <h3>Gaming</h3>
+              <p>High-refresh gear and immersive accessories that keep pace with intense play and streaming.</p>
+            </div>
+          </article>
+          <article class="category-card" data-category="accessories">
+            <img src="images/category-placeholder.svg" alt="Accessories category illustration with premium small devices">
+            <div>
+              <h3>Accessories</h3>
+              <p>Everyday carry essentials that complete your desk, bag, and mobile setup with style.</p>
+            </div>
+          </article>
+          <article class="category-card" data-category="smartwatches">
+            <img src="images/category-placeholder.svg" alt="Smart watch category illustration with a rounded wearable device">
+            <div>
+              <h3>Smart Watches</h3>
+              <p>Stay connected with wearable features that support fitness, messaging, and daily routines.</p>
+            </div>
+          </article>
+          <article class="category-card" data-category="audio">
+            <img src="images/category-placeholder.svg" alt="Audio devices category illustration with wireless headphones">
+            <div>
+              <h3>Audio Devices</h3>
+              <p>Crisp sound, balanced tuning, and wireless convenience for work, travel, and downtime.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="featured-products" data-section="featured-products">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Featured products</span>
+          <h2>Eight static product highlights with premium presentation</h2>
+          <p>The product cards are fully structured for future API-driven catalog data while remaining polished in their current static form.</p>
+        </div>
+
+        <div class="card-grid card-grid--products">
+          <article class="product-card" data-product-card data-product-category="smartphones" data-product-id="nova-x1-pro">
+            <img src="images/product-placeholder.svg" alt="Premium smartphone product display with a reflective finish">
+            <div class="product-card__body">
+              <span class="chip">Smartphones</span>
+              <h3>Nova X1 Pro</h3>
+              <p>Flagship performance with a cinematic display and a minimalist industrial design.</p>
+              <div class="product-card__meta">
+                <span class="price">$999</span>
+                <span class="rating">4.9 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-category="laptops" data-product-id="aero-book-14">
+            <img src="images/product-placeholder.svg" alt="Slim laptop product display on a premium studio background">
+            <div class="product-card__body">
+              <span class="chip">Laptops</span>
+              <h3>Aero Book 14</h3>
+              <p>Featherlight engineering for productivity, research, and creative work on the move.</p>
+              <div class="product-card__meta">
+                <span class="price">$1,249</span>
+                <span class="rating">4.8 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-category="gaming" data-product-id="pixel-play-5">
+            <img src="images/product-placeholder.svg" alt="Gaming product display with an illuminated controller and console styling">
+            <div class="product-card__body">
+              <span class="chip">Gaming</span>
+              <h3>Pixel Play 5</h3>
+              <p>Responsive controls and immersive visuals for smooth casual and competitive sessions.</p>
+              <div class="product-card__meta">
+                <span class="price">$699</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-category="accessories" data-product-id="magkit-pro">
+            <img src="images/product-placeholder.svg" alt="Accessory product display with compact charging and desk tools">
+            <div class="product-card__body">
+              <span class="chip">Accessories</span>
+              <h3>MagKit Pro</h3>
+              <p>Compact accessories that improve travel setups, charging habits, and workspace flow.</p>
+              <div class="product-card__meta">
+                <span class="price">$129</span>
+                <span class="rating">4.8 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-category="smartwatches" data-product-id="pulse-watch-2">
+            <img src="images/product-placeholder.svg" alt="Smart watch product display with a sleek wearable profile">
+            <div class="product-card__body">
+              <span class="chip">Smart Watches</span>
+              <h3>Pulse Watch 2</h3>
+              <p>All-day tracking, notifications, and a refined look that works from workouts to meetings.</p>
+              <div class="product-card__meta">
+                <span class="price">$349</span>
+                <span class="rating">4.6 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-category="audio" data-product-id="sound-pods-max">
+            <img src="images/product-placeholder.svg" alt="Audio product display with wireless earbuds and a charging case">
+            <div class="product-card__body">
+              <span class="chip">Audio</span>
+              <h3>Sound Pods Max</h3>
+              <p>Balanced audio with comfortable all-day wear and a case that slips easily into pockets.</p>
+              <div class="product-card__meta">
+                <span class="price">$199</span>
+                <span class="rating">4.9 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-category="smartphones" data-product-id="orbit-neo">
+            <img src="images/product-placeholder.svg" alt="Secondary smartphone product display with a modern matte finish">
+            <div class="product-card__body">
+              <span class="chip">Smartphones</span>
+              <h3>Orbit Neo</h3>
+              <p>A reliable everyday smartphone with a bright panel and all-day battery confidence.</p>
+              <div class="product-card__meta">
+                <span class="price">$799</span>
+                <span class="rating">4.7 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+          <article class="product-card" data-product-card data-product-category="laptops" data-product-id="studio-slate-16">
+            <img src="images/product-placeholder.svg" alt="Creative laptop product display with a spacious workstation layout">
+            <div class="product-card__body">
+              <span class="chip">Laptops</span>
+              <h3>Studio Slate 16</h3>
+              <p>Designed for editing, multitasking, and modern workflows that demand consistency.</p>
+              <div class="product-card__meta">
+                <span class="price">$1,599</span>
+                <span class="rating">4.8 &#9733;</span>
+              </div>
+              <a class="btn btn--small btn--secondary" href="products.html">View Details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-choose-us" data-section="why-choose-us">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Why TechNova</span>
+          <h2>A store experience shaped around trust and clarity</h2>
+          <p>Each feature card supports future content expansion while reinforcing the premium positioning of the brand.</p>
+        </div>
+
+        <div class="card-grid card-grid--features">
+          <article class="feature-card">
+            <h3>Fast Delivery</h3>
+            <p>Streamlined fulfilment expectations with a delivery-first retail experience.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Premium Products</h3>
+            <p>Curated devices chosen for performance, design quality, and long-term value.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Warranty</h3>
+            <p>Clear support pathways and product confidence built into the store narrative.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Secure Payments</h3>
+            <p>Checkout-ready UI foundations designed to support safe payment flows later.</p>
+          </article>
+          <article class="feature-card">
+            <h3>24/7 Support</h3>
+            <p>Service-oriented messaging that can scale into live chat or help center modules.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Easy Returns</h3>
+            <p>Transparent policies that keep the buying experience simple and reassuring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="testimonials" data-section="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Customer voices</span>
+          <h2>Realistic testimonial cards for portfolio credibility</h2>
+          <p>These reviews are written to feel authentic while remaining static content for the internship task.</p>
+        </div>
+
+        <div class="card-grid card-grid--testimonials">
+          <article class="testimonial-card">
+            <img src="images/avatar-placeholder.svg" alt="Portrait placeholder for Aanya Sharma">
+            <div>
+              <h3>Aanya Sharma</h3>
+              <p>"TechNova makes it easy to compare premium devices without feeling overwhelmed. The layout feels clean, modern, and trustworthy."</p>
+              <span class="rating">5.0 &#9733;</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <img src="images/avatar-placeholder.svg" alt="Portrait placeholder for Daniel Lee">
+            <div>
+              <h3>Daniel Lee</h3>
+              <p>"The product cards and category sections look polished enough for a real storefront. It already feels like a brand with direction."</p>
+              <span class="rating">4.9 &#9733;</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <img src="images/avatar-placeholder.svg" alt="Portrait placeholder for Mira Khan">
+            <div>
+              <h3>Mira Khan</h3>
+              <p>"I like the balance between strong visuals and clear structure. It is the kind of foundation you can confidently build on later."</p>
+              <span class="rating">5.0 &#9733;</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="newsletter" data-section="newsletter">
+      <div class="container">
+        <div class="newsletter-card glass-card">
+          <div>
+            <span class="eyebrow">Newsletter</span>
+            <h2>Get product drops, store updates, and launch notes</h2>
+            <p>Subscribe to receive announcements and highlights from the TechNova catalog as it grows.</p>
+          </div>
+          <form class="newsletter-form" data-form="newsletter">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input id="newsletter-email" name="email" type="email" placeholder="Enter your email address">
+            <button class="btn btn--primary" type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-component="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="index.html" aria-label="TechNova home">
+          <span class="brand__mark" aria-hidden="true">T</span>
+          <span class="brand__text">TechNova</span>
+        </a>
+        <p>Premium smart electronics designed with a modern shopping experience in mind.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Support</h3>
+        <ul class="footer__links">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <address>
+          120 Innovation Drive<br>
+          Bengaluru, KA 560001<br>
+          <a href="tel:+911234567890">+91 12345 67890</a><br>
+          <a href="mailto:hello@technova.com">hello@technova.com</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <div class="social-links" aria-label="Social links">
+        <a href="#" aria-label="TechNova on Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="TechNova on X">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4.6l4.1 5.7L18.4 4H21l-6.2 8.5L21 20h-4.6l-4.2-5.8L8 20H3.9l6.3-8.6L5 4Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="TechNova on YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M11 9l5 3-5 3V9Z" fill="currentColor"/></svg>
+        </a>
+      </div>
+      <p>&copy; 2026 TechNova. Built for the internship Task 1 UI foundation.</p>
+    </div>
+  </footer>
+</body>
+</html>

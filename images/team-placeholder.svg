@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Team placeholder</title>
+  <desc id="desc">A team portrait placeholder illustration.</desc>
+  <rect width="240" height="240" rx="30" fill="#f8fafc"/>
+  <circle cx="84" cy="78" r="34" fill="#2563eb" opacity=".16"/>
+  <circle cx="156" cy="82" r="30" fill="#f97316" opacity=".16"/>
+  <circle cx="120" cy="96" r="34" fill="#fff" stroke="#dbe5f1"/>
+  <path d="M78 198c10-33 31-50 42-50s32 17 42 50" fill="#111827" opacity=".12"/>
+  <rect x="62" y="156" width="116" height="14" rx="7" fill="#2563eb" opacity=".18"/>
+  <rect x="78" y="178" width="84" height="12" rx="6" fill="#5b6475" opacity=".18"/>
+</svg>

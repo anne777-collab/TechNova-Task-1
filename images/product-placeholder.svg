@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Product placeholder</title>
+  <desc id="desc">A premium product card placeholder illustration.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="p" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="36" fill="url(#g)"/>
+  <rect x="114" y="82" width="412" height="316" rx="34" fill="#111827" opacity=".06"/>
+  <rect x="100" y="68" width="412" height="316" rx="34" fill="#fff" stroke="#dbe5f1"/>
+  <rect x="176" y="120" width="260" height="170" rx="28" fill="url(#p)"/>
+  <rect x="206" y="152" width="200" height="28" rx="14" fill="#fff" opacity=".26"/>
+  <rect x="206" y="204" width="130" height="14" rx="7" fill="#fff" opacity=".23"/>
+  <circle cx="486" cy="158" r="46" fill="#f97316" opacity=".18"/>
+  <circle cx="480" cy="158" r="22" fill="#fff" opacity=".45"/>
+  <text x="82" y="430" fill="#5b6475" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">TechNova product preview</text>
+</svg>

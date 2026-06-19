@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar placeholder</title>
+  <desc id="desc">A neutral portrait-style placeholder.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#fff1e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="30" fill="url(#g)"/>
+  <circle cx="120" cy="92" r="42" fill="#2563eb" opacity=".16"/>
+  <path d="M66 196c10-34 36-52 54-52s44 18 54 52" fill="#111827" opacity=".14"/>
+  <circle cx="120" cy="96" r="34" fill="#fff" opacity=".8" stroke="#dbe5f1"/>
+  <circle cx="120" cy="88" r="12" fill="#2563eb" opacity=".4"/>
+  <path d="M92 142c7-12 19-18 28-18s21 6 28 18" fill="#2563eb" opacity=".24"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-labelledby="title desc">
+  <title id="title">Category placeholder</title>
+  <desc id="desc">A category card placeholder illustration.</desc>
+  <rect width="360" height="240" rx="28" fill="#eef4ff"/>
+  <circle cx="82" cy="82" r="42" fill="#2563eb" opacity=".16"/>
+  <circle cx="280" cy="66" r="34" fill="#f97316" opacity=".16"/>
+  <rect x="108" y="72" width="148" height="96" rx="24" fill="#fff" stroke="#dbe5f1"/>
+  <rect x="140" y="98" width="84" height="10" rx="5" fill="#2563eb" opacity=".4"/>
+  <rect x="122" y="120" width="120" height="10" rx="5" fill="#5b6475" opacity=".16"/>
+  <rect x="122" y="140" width="96" height="10" rx="5" fill="#5b6475" opacity=".16"/>
+</svg>
